@@ -15,6 +15,10 @@ import SearchBar from './components/SearchBar'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
 import Verify from './pages/Verify'
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:4000"; // Backend server URL
+axios.defaults.withCredentials = true; // Allow sending cookies / tokens
 
 const App = () => {
   return (
